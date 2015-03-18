@@ -582,4 +582,5 @@ app = webapp2.WSGIApplication([
     ('/message/(\w+)/(\w+)', MessagePage),
     ('/params', ParamsPage),
     ('/r/(\w+)', RoomPage),
+    ('/turn', CeodPage),
 ], debug=True)
