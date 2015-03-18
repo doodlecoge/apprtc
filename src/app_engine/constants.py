@@ -18,8 +18,8 @@ CEOD_KEY = '4080218913'
 
 
 TURN_SERVERS = [
-  'http://cloudtm.net:3478?transport=udp',
-  'http://cloudtm.net:3478?transport=tcp'
+  'turn:cloudtm.net:3478?transport=udp',
+  'turn:cloudtm.net:3478?transport=tcp'
 ]
 
 # Dictionary keys in the collider instance info constant.
