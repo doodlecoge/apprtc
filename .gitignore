@@ -9,3 +9,5 @@ validation-report.json
 validation-status.json
 webtest-master*
 /src/web_app/js/enums.js
+
+.idea/

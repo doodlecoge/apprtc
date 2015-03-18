@@ -13,6 +13,7 @@ import logging
 import os
 import random
 import threading
+import time
 
 import jinja2
 import webapp2
@@ -559,6 +560,14 @@ class ParamsPage(webapp2.RequestHandler):
     params = get_room_parameters(self.request, None, None, None)
     self.response.write(json.dumps(params))
 
+class CeodPage(webapp2.RequestHandler):
+  def get(self):
+    r = {
+      "username": "%s:the_username" % int(time.time()),
+      "password": "Sbrfo9r9HyspbkMMec02dNTKiMM=",
+      "uris": constants.TURN_SERVERS
+    }
+    self.response.write(json.dumps(r))
 
 app = webapp2.WSGIApplication([
     ('/', MainPage),

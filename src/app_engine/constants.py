@@ -11,9 +11,16 @@ MEMCACHE_RETRY_LIMIT = 100
 
 LOOPBACK_CLIENT_ID = 'LOOPBACK_CLIENT_ID'
 
-TURN_BASE_URL = 'https://computeengineondemand.appspot.com'
+# TURN_BASE_URL = 'https://computeengineondemand.appspot.com'
+TURN_BASE_URL = 'http://cloudtm.net:8888'
 TURN_URL_TEMPLATE = '%s/turn?username=%s&key=%s'
 CEOD_KEY = '4080218913'
+
+
+TURN_SERVERS = [
+  'http://cloudtm.net:3478?transport=udp',
+  'http://cloudtm.net:3478?transport=tcp'
+]
 
 # Dictionary keys in the collider instance info constant.
 WSS_INSTANCE_HOST_KEY = 'host_port_pair'
@@ -29,7 +36,8 @@ WSS_INSTANCES = [{
     WSS_INSTANCE_ZONE_KEY: 'us-central1-f'
 }]
 
-WSS_HOST_PORT_PAIRS = [ins[WSS_INSTANCE_HOST_KEY] for ins in WSS_INSTANCES]
+# WSS_HOST_PORT_PAIRS = [ins[WSS_INSTANCE_HOST_KEY] for ins in WSS_INSTANCES]
+WSS_HOST_PORT_PAIRS = ['http://cloudtm.net:8889']
 
 # memcache key for the active collider host.
 WSS_HOST_ACTIVE_HOST_KEY = 'wss_host_active_host'
