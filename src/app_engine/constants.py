@@ -37,7 +37,7 @@ WSS_INSTANCES = [{
 }]
 
 # WSS_HOST_PORT_PAIRS = [ins[WSS_INSTANCE_HOST_KEY] for ins in WSS_INSTANCES]
-WSS_HOST_PORT_PAIRS = ['http://cloudtm.net:8889']
+WSS_HOST_PORT_PAIRS = ['cloudtm.net:8889']
 
 # memcache key for the active collider host.
 WSS_HOST_ACTIVE_HOST_KEY = 'wss_host_active_host'
