@@ -477,6 +477,9 @@ class MessagePage(webapp2.RequestHandler):
 
   def post(self, room_id, client_id):
     message_json = self.request.body
+
+    logging.info('>>> ' + message_json)
+
     result = save_message_from_client(
         self.request.host_url, room_id, client_id, message_json)
     if result['error'] is not None:
