@@ -18,6 +18,8 @@ CEOD_KEY = '4080218913'
 
 
 TURN_SERVERS = [
+  'stun:cloudtm.net:3478?transport=udp',
+  'stun:cloudtm.net:3478?transport=udp',
   'turn:cloudtm.net:3478?transport=udp',
   'turn:cloudtm.net:3478?transport=tcp'
 ]
